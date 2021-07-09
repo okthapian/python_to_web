@@ -1,0 +1,10 @@
+import requests
+
+p_nama='marko'
+p_nim='6787678'
+p_alamat='lamongan'
+url_insert='https://skripsitari.skydremdev.com/insert-data.php?d_name='+str(p_nama)+'&d_nim='+str(p_nim)+'&d_alamat='+str(p_alamat)
+x = requests.get(url_insert);
+
+print('insert sukses:'+url_insert)
+print('hasil cek link http://skripsitari.skydremdev.com/select-data.php')
